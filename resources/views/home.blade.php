@@ -17,6 +17,7 @@
                 <div class="card-footer">
                     <a href="{{ route('admin.books.index') }}" class="btn btn-primary mx-1">Books</a>
                     <a href="{{ route('admin.users.index') }}" class="btn btn-primary mx-1">Users</a>
+                    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary mx-1">Orders</a>
                 </div>
             @else
                 <div class="card-footer">

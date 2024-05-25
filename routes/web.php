@@ -24,6 +24,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('books', [BookController::class, 'index'])->name('books.index');
     Route::post('books', [BookController::class, 'import'])->name('books.import');
     Route::get('users', [BookController::class, 'users'])->name('users.index');
+    Route::get('orders', [BookController::class, 'orders'])->name('orders.index');
 });
 Route::post('search', [BookController::class, 'search'])->name('books.search');
 Route::post('cart-store', [BookController::class, 'cartStore'])->name('cart.store');

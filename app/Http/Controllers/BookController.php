@@ -71,6 +71,12 @@ class BookController extends Controller
         return view('admin.users.index', compact('users'));
     }
 
+    public function orders()
+    {
+        $orders = Order::paginate(5);
+        return view('admin.orders.index', compact('orders'));
+    }
+
     /**
      * Display the specified resource.
      */
